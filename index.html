@@ -7,6 +7,10 @@
         body {
             background-color: var(--tg-theme-bg-color);
         }
+        #goods {
+            display: grid;
+            grid-template-columns: 49% 49%;
+        }
     </style>
     <script>
         var WebApp = window.Telegram.WebApp;
@@ -16,6 +20,13 @@
     <title>Cosy Order</title>
 </head>
 <body>
-    <img src="/img/coffee.png">
+    <div id="goods">
+        <div id="coffee">
+            <img src="/img/coffee.png">
+        </div>
+        <div id="matcha">
+            <img src="/img/matcha.png">
+        </div>
+    </div>
 </body>
 </html>
