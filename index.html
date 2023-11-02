@@ -12,6 +12,13 @@
             display: grid;
             grid-template-columns: 33% 33%;
         }
+        #cappuccino, #matcha {
+            margin: auto;
+        }
+        #cappuccino_image, #matcha_image {
+            height: 20%;
+            width: 20%;
+        }
         #cappuccino_button, #matcha_button {
             color: var(--tg-theme-bg-color);
             background-color: var(--tg-theme-button-color);
@@ -19,6 +26,7 @@
             border-radius: 7px;
             cursor: pointer;
         }
+
     </style>
     <script>
         var WebApp = window.Telegram.WebApp;
@@ -30,13 +38,13 @@
 <body>
     <div id="goods">
         <div id="cappuccino">
-            <img src="https://nacchip.github.io/cosy_order/img/cappuccino.svg">
+            <img id="cappuccino_image" src="https://nacchip.github.io/cosy_order/img/cappuccino.svg">
             <br />
             <p id="cappuccino_text">Капучино</p>
             <button id="cappuccino_button">Добавить</button>
         </div>
         <div id="matcha">
-            <img src="https://nacchip.github.io/cosy_order/img/matcha.svg">
+            <img id="matcha_image" src="https://nacchip.github.io/cosy_order/img/matcha.svg">
             <br />
             <p id="matcha_text">Матча</p>
             <button id="matcha_button">Добавить</button>
